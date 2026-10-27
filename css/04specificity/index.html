@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* the specificity of this selector is 1*/
+        
+
+        /* the specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* the specificity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* the specificity of this selector is 10 */
+        .yelllow {
+            color: yellow;
+        }
+
+        /* This is an example of attribute selector */
+
+        /* [data-x=a]{
+        background-color: red;} */
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h1 class="yellow cred cpurple" data-x="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            molestiae voluptate! In iure voluptas at eum minus
+            est debitis facere dolorem molestias doloremque, aspernatur, nesciunt odio laboriosam quos quam dolore!</h1>
+    </div>
+
+</body>
+
+</html>

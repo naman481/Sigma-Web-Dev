@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table header */
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Table cells */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(even) {
+    background-color: #f2f7fc;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #d6eaf8;
+    transition: background-color 0.3s ease;
+}
+
+/* Remove bottom border from last row */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+</style>
+</head>
+<body>
+    <h1>tables in html</h1>
+    <table>
+        head of the table
+        <thead>
+            table row
+            <tr> 
+                <th> Name </th>
+                <th> RollNo.  </th>
+                <th> Class </th>
+                <th> contactno.</th>
+
+            </tr>
+
+        </thead>
+        body of the table
+        <tbody><tr>
+            <td>naman</td>
+            <td>21</td>
+            <td>btech</td>
+            <td>0011</td>
+        </tr>
+        <tr>
+            <td>Rihan</td>
+            <td>2</td>
+            <td>mtech</td>
+            <td>001111</td>
+        </tr>
+        <tr>
+            <td>vansh</td>
+            <td>1</td>
+            <td>bphrama</td>
+            <td>001111</td>
+        </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

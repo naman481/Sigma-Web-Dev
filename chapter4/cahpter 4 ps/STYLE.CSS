@@ -1,0 +1,128 @@
+ 
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Page Background ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Booking Form ===== */
+form {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    border-top: 5px solid #f0a44b;
+}
+
+/* ===== Form Field Spacing ===== */
+form div {
+    margin-bottom: 20px;
+}
+
+/* ===== Labels ===== */
+label {
+    display: block;
+    color: #203a43;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* ===== Input Fields ===== */
+input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d5dde2;
+    border-radius: 9px;
+    background-color: #f7f9fa;
+    font-size: 14px;
+    color: #203040;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: #9aa6ad;
+    text-transform: capitalize;
+}
+
+/* ===== Input Focus Effect ===== */
+input:focus {
+    outline: none;
+    border-color: #f0a44b;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(240, 164, 75, 0.18);
+}
+
+/* ===== Submit Button ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #f0a44b, #e67e22);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* ===== Button Hover ===== */
+button:hover {
+    background: linear-gradient(135deg, #e67e22, #cf6512);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(230, 126, 34, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 500px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+}
